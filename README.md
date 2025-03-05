@@ -1,42 +1,48 @@
 **Análise Exploratória de Financiamentos**
+
 Este repositório contém uma análise exploratória de dados relacionados a financiamentos. O objetivo principal é entender as características dos clientes que possuem financiamentos, identificar os valores mínimos e máximos financiados, e analisar a distribuição de idades dos clientes. A análise foi realizada utilizando Python e bibliotecas como Pandas, Seaborn e Matplotlib.
 
-Objetivos da Análise
-Quantidade de clientes que possuem financiamento de cada produto.
+**Objetivos da Análise:**
 
-Menor valor financiado.
+1.Quantidade de clientes que possuem financiamento de cada produto.
 
-Maior valor financiado.
+2.Menor valor financiado.
 
-Cliente com a menor idade.
+2.Maior valor financiado.
 
-Cliente com a maior idade.
+3.Cliente com a menor idade.
 
-Bibliotecas Utilizadas
-Pandas: Para manipulação e análise de dados.
+4.Cliente com a maior idade.
 
-Seaborn: Para visualização de gráficos.
 
-Matplotlib: Para criação de gráficos mais robustos.
+**Bibliotecas Utilizadas:**
 
-Warnings: Para desativar mensagens de alerta do Python.
+**- Pandas**: Para manipulação e análise de dados.
 
-Passos da Análise
-Importação das Bibliotecas: As bibliotecas necessárias foram importadas para realizar a análise.
+**- Seaborn**: Para visualização de gráficos.
 
-Configuração do Pandas: Configuração para exibir todas as colunas do arquivo.
+**- Matplotlib**: Para criação de gráficos mais robustos.
 
-Importação dos Dados: Os dados foram importados de um arquivo CSV.
+**- Warnings**: Para desativar mensagens de alerta do Python.
 
-Exploração Inicial dos Dados: Verificação do formato dos dados, visualização das primeiras e últimas linhas, e análise do período dos dados.
+**- Passos da Análise**:
 
-Verificação de Tipos de Dados e Valores Nulos: Verificação dos tipos de dados e identificação de valores nulos.
+**- Importação das Bibliotecas**: As bibliotecas necessárias foram importadas para realizar a análise.
 
-Análise Estatística: Cálculo de medidas estatísticas básicas.
+**- Configuração do Pandas**: Configuração para exibir todas as colunas do arquivo.
 
-Visualização de Dados: Criação de gráficos para melhor compreensão dos dados.
+**- Importação dos Dados**: Os dados foram importados de um arquivo CSV.
 
-Respostas às Perguntas Iniciais:
+**- Exploração Inicial dos Dados**: Verificação do formato dos dados, visualização das primeiras e últimas linhas, e análise do período dos dados.
+
+**- Verificação de Tipos de Dados e Valores Nulos**: Verificação dos tipos de dados e identificação de valores nulos.
+
+**- Análise Estatística**: Cálculo de medidas estatísticas básicas.
+
+**- Visualização de Dados**: Criação de gráficos para melhor compreensão dos dados.
+
+
+**- Respostas às Perguntas Iniciais**:
 
 Quantidade de clientes por produto financiado.
 
@@ -44,8 +50,9 @@ Menor e maior valor financiado.
 
 Cliente com a menor e maior idade.
 
-Principais Resultados
-Quantidade de Clientes por Produto:
+
+**Principais Resultados**
+- Quantidade de Clientes por Produto:
 
 AUTOMOVEIS: 245218
 
@@ -55,19 +62,21 @@ IMOVEIS: 48476
 
 MOTOCICLETAS: 42447
 
-Menor Valor Financiado: 20000
+- Menor Valor Financiado: 20000
 
-Maior Valor Financiado: 300000
+- Maior Valor Financiado: 300000
 
-Cliente com a Menor Idade: 0.0 anos
+- Cliente com a Menor Idade: 0.0 anos
 
-Cliente com a Maior Idade: 100.0 anos
+- Cliente com a Maior Idade: 100.0 anos
 
-Visualizações
+**Visualizações**
+
 Boxplot: Visualização da distribuição dos dias ativos dos clientes.
 
 Histograma: Distribuição dos dias ativos dos clientes.
 
-Conclusão
+**Conclusão**:
+
 A análise exploratória permitiu identificar padrões e características importantes dos dados de financiamentos. A maioria dos clientes possui financiamentos para automóveis, e os valores financiados variam entre 20000 e 300000. A idade dos clientes varia de 0 a 100 anos, com uma distribuição que pode ser melhor compreendida através dos gráficos gerados.
 
