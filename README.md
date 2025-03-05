@@ -1,82 +1,71 @@
-**Análise Exploratória de Financiamentos**
+# Análise Exploratória de Cancelamentos de Clientes
+Este repositório contém uma análise exploratória de dados (EDA) focada em entender os motivos de cancelamento de clientes em uma empresa com mais de 800 mil clientes. O objetivo principal é identificar os principais fatores que levam ao cancelamento e propor ações eficazes para reduzir essa taxa.
 
-Este repositório contém uma análise exploratória de dados relacionados a financiamentos. O objetivo principal é entender as características dos clientes que possuem financiamentos, identificar os valores mínimos e máximos financiados, e analisar a distribuição de idades dos clientes. A análise foi realizada utilizando Python e bibliotecas como Pandas, Seaborn e Matplotlib.
+# Descrição do Projeto:
+A empresa identificou que a maioria de sua base de clientes é inativa, ou seja, já cancelou o serviço. Para melhorar seus resultados, a empresa deseja entender os principais motivos desses cancelamentos e quais ações podem ser tomadas para reduzir esse número.
 
-**Objetivos da Análise:**
+**Dados Utilizados:**
+O conjunto de dados utilizado contém informações sobre os clientes, incluindo:
 
-1.Quantidade de clientes que possuem financiamento de cada produto.
+**- CustomerID**: Identificador único do cliente.
 
-2.Menor valor financiado.
+**- idade**: Idade do cliente.
 
-2.Maior valor financiado.
+**- sexo**: Gênero do cliente.
 
-3.Cliente com a menor idade.
+**- tempo_como_cliente**: Tempo que o cliente está com a empresa.
 
-4.Cliente com a maior idade.
+**- frequencia_uso**: Frequência com que o cliente utiliza o serviço.
 
+**- ligacoes_callcenter**: Número de ligações feitas ao call center.
 
-**Bibliotecas Utilizadas:**
+**- dias_atraso**: Dias de atraso no pagamento.
 
-**- Pandas**: Para manipulação e análise de dados.
+**- assinatura**: Tipo de assinatura do cliente (Basic, Standard, Premium).
 
-**- Seaborn**: Para visualização de gráficos.
+**- duracao_contrato**: Duração do contrato (Monthly, Quarterly, Annual).
 
-**- Matplotlib**: Para criação de gráficos mais robustos.
+**- total_gasto**: Total gasto pelo cliente.
 
-**- Warnings**: Para desativar mensagens de alerta do Python.
+**- meses_ultima_interacao**: Meses desde a última interação com o cliente.
 
-**- Passos da Análise**:
+**- cancelou**: Indicador se o cliente cancelou o serviço (1.0 para cancelou, 0.0 para não cancelou).
 
-**- Importação das Bibliotecas**: As bibliotecas necessárias foram importadas para realizar a análise.
+**Análise Realizada**
 
-**- Configuração do Pandas**: Configuração para exibir todas as colunas do arquivo.
+1.**Limpeza dos Dados**:
 
-**- Importação dos Dados**: Os dados foram importados de um arquivo CSV.
+- Remoção de colunas irrelevantes (CustomerID).
+- Remoção de linhas com valores nulos.
 
-**- Exploração Inicial dos Dados**: Verificação do formato dos dados, visualização das primeiras e últimas linhas, e análise do período dos dados.
+2.**Análise de Cancelamentos**:
 
-**- Verificação de Tipos de Dados e Valores Nulos**: Verificação dos tipos de dados e identificação de valores nulos.
+- Identificação de que 56.7% dos clientes cancelaram o serviço.
 
-**- Análise Estatística**: Cálculo de medidas estatísticas básicas.
+- Visualização de histogramas para cada variável, segmentados por clientes que cancelaram e não cancelaram.
 
-**- Visualização de Dados**: Criação de gráficos para melhor compreensão dos dados.
+3.**Identificação de Padrões**:
 
+- Clientes com contratos mensais tendem a cancelar mais.
 
-**- Respostas às Perguntas Iniciais**:
+- Clientes que ligam mais de 4 vezes para o call center têm maior probabilidade de cancelar.
 
-Quantidade de clientes por produto financiado.
+- Clientes com mais de 20 dias de atraso no pagamento tendem a cancelar.
 
-Menor e maior valor financiado.
+4.**Propostas de Ações**:
 
-Cliente com a menor e maior idade.
+- Contrato: Oferecer descontos maiores para planos anuais e trimestrais.
 
+- Call Center: Resolver problemas dos clientes em até duas ligações.
 
-**Principais Resultados**
-- Quantidade de Clientes por Produto:
+- Dias de Atraso: Enviar avisos diários após 20 dias de atraso.
 
-AUTOMOVEIS: 245218
+- Resultados Após Implementação das Ações:
 
-CAMINHÕES: 7156
+**Após a aplicação das ações propostas, a taxa de cancelamento caiu para 18.4%, enquanto a taxa de retenção subiu para 81.6%.**
 
-IMOVEIS: 48476
+**Visualizações**:
+Foram gerados histogramas para cada variável, mostrando a distribuição dos dados e a relação com o cancelamento. Essas visualizações ajudaram a identificar os principais fatores que influenciam o cancelamento.
 
-MOTOCICLETAS: 42447
-
-- Menor Valor Financiado: 20000
-
-- Maior Valor Financiado: 300000
-
-- Cliente com a Menor Idade: 0.0 anos
-
-- Cliente com a Maior Idade: 100.0 anos
-
-**Visualizações**
-
-Boxplot: Visualização da distribuição dos dias ativos dos clientes.
-
-Histograma: Distribuição dos dias ativos dos clientes.
-
-**Conclusão**:
-
-A análise exploratória permitiu identificar padrões e características importantes dos dados de financiamentos. A maioria dos clientes possui financiamentos para automóveis, e os valores financiados variam entre 20000 e 300000. A idade dos clientes varia de 0 a 100 anos, com uma distribuição que pode ser melhor compreendida através dos gráficos gerados.
-
+Conclusão
+A análise mostrou que é possível reduzir significativamente a taxa de cancelamento com ações direcionadas, como a melhoria no atendimento ao cliente, oferta de descontos em planos de maior duração e monitoramento mais rigoroso dos pagamentos em atraso
